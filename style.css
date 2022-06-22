@@ -1,0 +1,79 @@
+body, h1,h2,h3,h4,h5,h6 {
+	font-family: "Montserrat", sans-serif
+}
+.w3-row-padding img {
+	margin-bottom: 12px;
+}
+#main {
+	margin-left: 120px;
+}
+@media only screen and (max-width: 300px){
+	#main {margin-left: 0;
+	}
+}
+.w3-jumbo{
+	font-weight: 500;
+}
+.w3-sidebar {
+	width: 120px !important;
+	background: #222 !important;
+}
+i{
+	color: #e91e63!important;
+}
+footer i{
+	margin: 8px;
+	color: #777 !important;
+}
+footer i:hover{
+	color: #e91e63 !important;
+	cursor: pointer;
+}
+.top-button{
+	display: flex;
+	justify-content: center;
+}
+.w3-bottom .w3-bar .w3-bar-item{
+	width:25% !important;
+}
+
+.w3-container p button{
+	float: left;
+	align-items: center;
+	margin: 15px;
+	margin-top: 0px;
+	justify-content: space-around;
+}
+hr{
+	width: 150px;
+}
+.s1{
+	width: 95% !important;
+	height: 28px;
+}
+.s2{
+	width: 85%;
+	height: 28px;
+}
+.s3{
+	width: 80%;
+	height: 28px;
+}
+.w3-row-padding{
+	margin: 0 -16px;
+}
+#contact{
+	margin-top: 100px;
+}
+#send i{
+	color: white !important;
+}
+#send:hover i{
+	color: #e91e63!important;
+}
+#d-resume i{
+	color: white !important;
+}
+#d-resume:hover i{
+	color: #e91e63!important;
+}
