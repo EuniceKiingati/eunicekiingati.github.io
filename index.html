@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Portifolio</title>
+<title>Eunice</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
 <body class="w3-black">
 <nav class="w3-sidebar w3-bar-block w3-small w3-center">
 <img src="image/pexels-javon-swaby-1697912.jpg" width="100%">
@@ -99,13 +102,13 @@
     </div><br>
     <p>Send me a message:</p>
 
-    <form action="" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+    <form action="" id='emailForm' onsubmit="return false">
+      <p><input id="name" class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input id="email" class="w3-input w3-padding-16" type="email" placeholder="Email" required name="Email"></p>
+      <p><input id="subject" class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><textarea id="message" class="w3-input w3-padding-16" placeholder="Message" required name="Message"></textarea></p>
       <p>
-        <button class="w3-button w3-pink w3-padding-large" type="submit" id="send">
+        <button class="w3-button w3-pink w3-padding-large" type="submit" id="send" onclick="sendEmail()">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
@@ -124,8 +127,12 @@
         
         </footer>
 </div>
+<script type="text/javascript">
+    (function(){
+       emailjs.init("yPukrGH-UFdzLsewG");
+    })();
+ </script>
+<script src="contactform.js" type="text/javascript"></script>
+
 </body>
-
-
-
 </html>
