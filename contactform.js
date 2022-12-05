@@ -1,7 +1,7 @@
 const sendEmail = ()=>{
     const name=document.getElementById('name').value;
     const email=document.getElementById('email').value;
-    const subject=document.getElementById('subject').value;
+    const subject=document.getElementById('number').value;
     const message=document.getElementById('message').value;
 
     if(name.trim() == '' || email.trim() =='' || subject.trim()=='' || message.trim()==''){
